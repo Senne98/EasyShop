@@ -33,10 +33,10 @@ public final class EasyShop extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new BuyInvClick(), this);
 
         // commands
-        getCommand("shop").setExecutor(new OpenCommand());
+        //getCommand("shop").setExecutor(new OpenCommand());
 
         //
-        Currency currency = new Currency(new NamespacedKey(this, "coins"), Component.text("coins"), Component.text("µ"));
+        /*Currency currency = new Currency(new NamespacedKey(this, "coins"), Component.text("coins"), Component.text("µ"));
         
         SingleItem singleItem = new SingleItem(Component.text("single"), new NamespacedKey("minecraft", "coal"), new NamespacedKey("minecraft", "coal"), Geld_API.currencyList.get(new NamespacedKey(this, "coins")), 1, 1, new NamespacedKey(this, "singleitem"));
         Item item = new Item(Component.text("item"), new NamespacedKey("minecraft", "coal"), new NamespacedKey("minecraft", "coal"), Geld_API.currencyList.get(new NamespacedKey(this, "coins")), 1, 1, new NamespacedKey(this, "item"));
@@ -52,7 +52,7 @@ public final class EasyShop extends JavaPlugin {
         layout2.add(item);
         layout2.add(shop2);
 
-        Shop shop = new Shop(Component.text("shop"), new NamespacedKey("minecraft", "coal"), layout2, new NamespacedKey(this, "shop"));
+        Shop shop = new Shop(Component.text("shop"), new NamespacedKey("minecraft", "coal"), layout2, new NamespacedKey(this, "shop"));*/
     }
 
     @Override
