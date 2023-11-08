@@ -1,0 +1,74 @@
+[21:55:31] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[21:55:33] [ServerMain/INFO]: Loaded 7 recipes
+[21:55:33] [Server thread/INFO]: Starting minecraft server version 1.20
+[21:55:33] [Server thread/INFO]: Loading properties
+[21:55:34] [Server thread/INFO]: This server is running Paper version git-Paper-17 (MC: 1.20) (Implementing API version 1.20-R0.1-SNAPSHOT) (Git: c287e92)
+[21:55:34] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:55:34] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:55:34] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[21:55:34] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[21:55:34] [Server thread/INFO]: Default game type: SURVIVAL
+[21:55:34] [Server thread/INFO]: Generating keypair
+[21:55:34] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:55:34] [Server thread/INFO]: Using default channel type
+[21:55:34] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[21:55:34] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[21:55:35] [Server thread/INFO]: [EasyShop] Loading server plugin EasyShop v1.0
+[21:55:35] [Server thread/INFO]: [Geld-API] Loading server plugin Geld-API v4.0-SNAPSHOT
+[21:55:35] [Server thread/INFO]: [Custom_Item_Api] Loading server plugin Custom_Item_Api v2.0-SNAPSHOT
+[21:55:35] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:55:35] [Server thread/INFO]: Preparing level "world"
+[21:55:35] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:55:35] [Server thread/INFO]: Time elapsed: 236 ms
+[21:55:35] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[21:55:35] [Server thread/INFO]: Time elapsed: 48 ms
+[21:55:35] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[21:55:35] [Server thread/INFO]: Time elapsed: 37 ms
+[21:55:35] [Server thread/INFO]: [EasyShop] Enabling EasyShop v1.0
+[21:55:35] [Server thread/INFO]: [Geld-API] Enabling Geld-API v4.0-SNAPSHOT
+[21:55:35] [Server thread/WARN]: [Geld-API] Could not save currency.json to plugins\Geld-API\currency.json because currency.json already exists.
+[21:55:35] [Server thread/INFO]: [Custom_Item_Api] Enabling Custom_Item_Api v2.0-SNAPSHOT
+[21:55:35] [Server thread/WARN]: [Custom_Item_Api] Could not save blocks.json to plugins\Custom_Item_Api\blocks.json because blocks.json already exists.
+[21:55:35] [Server thread/WARN]: [Custom_Item_Api] Could not save items.json to plugins\Custom_Item_Api\items.json because items.json already exists.
+[21:55:35] [Server thread/WARN]: [Custom_Item_Api] Could not save Settings.json to plugins\Custom_Item_Api\Settings.json because Settings.json already exists.
+[21:55:36] [Server thread/INFO]: Running delayed init tasks
+[21:55:36] [Server thread/INFO]: Done (2.153s)! For help, type "help"
+[21:55:36] [Server thread/INFO]: Timings Reset
+[21:55:39] [Server thread/INFO]: com.mojang.authlib.GameProfile@1a5129fe[id=<null>,name=Super_man2006,properties={},legacy=false] (/127.0.0.1:63399) lost connection: Disconnected
+[21:55:45] [User Authenticator #0/INFO]: UUID of player Super_man2006 is 067404e2-fb9c-4a78-b1ed-cc996871e0c0
+[21:55:47] [Server thread/INFO]: Super_man2006 joined the game
+[21:55:47] [Server thread/INFO]: Super_man2006[/127.0.0.1:63401] logged in with entity id 272 at ([world]0.2628168218902463, 83.0, 4.016631053991292)
+[21:55:55] [Server thread/INFO]: Super_man2006 issued server command: /shop
+[21:58:07] [Server thread/INFO]: Stopping the server
+[21:58:07] [Server thread/INFO]: Stopping server
+[21:58:07] [Server thread/INFO]: [Custom_Item_Api] Disabling Custom_Item_Api v2.0-SNAPSHOT
+[21:58:07] [Server thread/INFO]: [Geld-API] Disabling Geld-API v4.0-SNAPSHOT
+[21:58:07] [Server thread/INFO]: [EasyShop] Disabling EasyShop v1.0
+[21:58:07] [Server thread/INFO]: Saving players
+[21:58:07] [Server thread/INFO]: Super_man2006 lost connection: Server closed
+[21:58:07] [Server thread/INFO]: Super_man2006 left the game
+[21:58:07] [Server thread/INFO]: Saving worlds
+[21:58:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21:58:07] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[21:58:07] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[21:58:07] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[21:58:08] [Server thread/INFO]: [ChunkHolderManager] Saved 625 block chunks, 625 entity chunks, 0 poi chunks in world 'world' in 1.19s
+[21:58:08] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:58:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[21:58:08] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[21:58:08] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[21:58:08] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[21:58:09] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_nether' in 0.55s
+[21:58:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:58:09] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[21:58:09] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[21:58:09] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[21:58:09] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[21:58:09] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0.23s
+[21:58:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:58:09] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[21:58:09] [Server thread/INFO]: Flushing Chunk IO
+[21:58:09] [Server thread/INFO]: Closing Thread Pool
+[21:58:09] [Server thread/INFO]: Closing Server

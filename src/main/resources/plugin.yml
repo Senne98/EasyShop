@@ -1,0 +1,7 @@
+name: EasyShop
+version: '${version}'
+main: org.super_man2006.easyshop.EasyShop
+api-version: '1.20'
+commands:
+  shop:
+    usage: "/shop"
