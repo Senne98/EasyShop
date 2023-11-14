@@ -2,6 +2,6 @@ name: EasyShop
 version: '1.0'
 main: org.super_man2006.easyshop.EasyShop
 api-version: '1.20'
-commands:
-  shop:
-    usage: "/shop"
+#commands:
+#  shop:
+#    usage: "/shop"
