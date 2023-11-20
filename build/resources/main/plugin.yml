@@ -1,5 +1,5 @@
 name: EasyShop
-version: '1.0'
+version: '1.1'
 main: org.super_man2006.easyshop.EasyShop
 api-version: '1.20'
 #commands:

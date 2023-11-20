@@ -13,6 +13,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataType;
 import org.super_man2006.custom_item_api.CustomItems.items.CustomItem;
 import org.super_man2006.easyshop.EasyShop;
+import org.super_man2006.easyshop.settings.Cmd;
 import org.super_man2006.easyshop.shop.types.Item;
 
 import java.util.ArrayList;
@@ -29,6 +30,9 @@ public class BuyInv implements InventoryHolder {
 
         ItemStack filler = new ItemStack(Material.GRAY_STAINED_GLASS_PANE);
         ItemMeta fillerMeta = filler.getItemMeta();
+        if (Cmd.background != -1) {
+            fillerMeta.setCustomModelData(Cmd.background);
+        }
         fillerMeta.displayName(Component.text(""));
         filler.setItemMeta(fillerMeta);
         for (int i = 0; i < 27; i++) {
@@ -44,6 +48,9 @@ public class BuyInv implements InventoryHolder {
 
         ItemStack close = new ItemStack(Material.BARRIER);
         ItemMeta closeMeta = close.getItemMeta();
+        if (Cmd.backbutton != -1) {
+            closeMeta.setCustomModelData(Cmd.backbutton);
+        }
         closeMeta.displayName(Component.text("Close").color(NamedTextColor.RED).decoration(TextDecoration.ITALIC, false));
         closeMeta.getPersistentDataContainer().set(new NamespacedKey(EasyShop.plugin, "shop"), PersistentDataType.STRING, shopId.asString());
         close.setItemMeta(closeMeta);
@@ -53,8 +60,34 @@ public class BuyInv implements InventoryHolder {
         for (int i = 9; i < 18; i++) {
             int amount = (int) Math.pow(2, i - 9);
 
+            int cmd;
+            if (amount == 1) {
+                cmd = Cmd.buyone;
+            } else if (amount == 2) {
+                cmd = Cmd.buytwo;
+            } else if (amount == 4) {
+                cmd = Cmd.buyfour;
+            } else if (amount == 8) {
+                cmd = Cmd.buyeight;
+            } else if (amount == 16) {
+                cmd = Cmd.buysixteen;
+            } else if (amount == 32) {
+                cmd = Cmd.buythirtytwo;
+            } else if (amount == 64) {
+                cmd = Cmd.buysixtyfour;
+            } else if (amount == 128) {
+                cmd = Cmd.buyonehundredtwentyeight;
+            } else if (amount == 256) {
+                cmd = Cmd.buytwohundredfiftysix;
+            } else {
+                cmd = -1;
+            }
+
             ItemStack buy = new ItemStack(Material.GREEN_STAINED_GLASS_PANE);
             ItemMeta buyMeta = buy.getItemMeta();
+            if (cmd != -1) {
+                buyMeta.setCustomModelData(cmd);
+            }
             buyMeta.displayName(Component.text("buy " + amount).color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, false));
             List<Component> lore = new ArrayList<>();
             lore.add(Component.text("price: " + (item.getBuyPrice() * amount)).color(NamedTextColor.WHITE).decoration(TextDecoration.ITALIC, false));

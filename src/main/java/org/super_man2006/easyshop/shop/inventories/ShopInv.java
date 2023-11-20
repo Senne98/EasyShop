@@ -14,6 +14,7 @@ import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 import org.super_man2006.custom_item_api.CustomItems.items.CustomItem;
 import org.super_man2006.easyshop.EasyShop;
+import org.super_man2006.easyshop.settings.Cmd;
 import org.super_man2006.easyshop.shop.types.Item;
 import org.super_man2006.easyshop.shop.types.Shop;
 import org.super_man2006.easyshop.shop.types.SingleItem;
@@ -41,6 +42,9 @@ public class ShopInv implements InventoryHolder {
 
         ItemStack filler = new ItemStack(Material.GRAY_STAINED_GLASS_PANE);
         ItemMeta fillerMeta = filler.getItemMeta();
+        if (Cmd.background != -1) {
+            fillerMeta.setCustomModelData(Cmd.background);
+        }
         fillerMeta.displayName(Component.text(""));
         filler.setItemMeta(fillerMeta);
         for (int i = 0; i < size; i++) {

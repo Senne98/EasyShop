@@ -1,0 +1,25 @@
+#Put cmd for the items in the GUI, remove or leave empty for no cmd
+
+background=000001
+
+backbutton=000001
+
+buyone=000001
+buytwo=000001
+buyfour=000001
+buyeight=000001
+buysixteen=000001
+buythirtytwo=000001
+buysixtyfour=000001
+buyonehundredtwentyeight=000001
+buytwohundredfiftysix=000001
+
+sellone=000001
+selltwo=000001
+sellfour=000001
+selleight=000001
+sellsixteen=000001
+sellthirtytwo=000001
+sellsixtyfour=000001
+sellonehundredtwentyeight=000001
+selltwohundredfiftysix=000001

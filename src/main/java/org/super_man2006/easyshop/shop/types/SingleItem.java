@@ -74,6 +74,7 @@ public class SingleItem extends ShopInstance {
         this.sellPrice = sellPrice;
         instances.put(id, this);
         this.id = id;
+        this.buyPrice = -1;
     }
 
     /**
@@ -101,6 +102,7 @@ public class SingleItem extends ShopInstance {
         this.buyPrice = buyPrice;
         instances.put(id, this);
         this.id = id;
+        this.sellPrice = -1;
     }
 
     public NamespacedKey getId() {
