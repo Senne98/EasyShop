@@ -15,6 +15,7 @@ import org.bukkit.persistence.PersistentDataType;
 import org.super_man2006.custom_item_api.CustomItems.items.CustomItem;
 import org.super_man2006.easyshop.EasyShop;
 import org.super_man2006.easyshop.settings.Cmd;
+import org.super_man2006.easyshop.shop.types.Empty;
 import org.super_man2006.easyshop.shop.types.Item;
 import org.super_man2006.easyshop.shop.types.Shop;
 import org.super_man2006.easyshop.shop.types.SingleItem;
@@ -52,7 +53,7 @@ public class ShopInv implements InventoryHolder {
         }
 
         for (int i = 0; i < layout.size(); i++) {
-            if (layout == null) {
+            if (layout instanceof Empty) {
                 continue;
             }
             if (layout.get(i) instanceof SingleItem) {

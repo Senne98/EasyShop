@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * Is used to represent a shop page in a shop tree. In {@link #layout} you can put {@link Shop},
- * {@link SingleItem}, {@link Item} or {@link null} for an empty spot. The size of {@link #layout} can not
+ * {@link SingleItem}, {@link Item} or {@link Empty} for an empty spot. The size of {@link #layout} can not
  * exceed 54 as this is maximum inventory size allowed by minecraft.
  */
 public class Shop extends ShopInstance {
